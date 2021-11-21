@@ -27,13 +27,17 @@
   ],
   "main": "./out/src/extension",
   "contributes": {
-    "customEditors": [{
-      "viewType": "pdf.preview",
-      "displayName": "Pdf Preview",
-      "selector": [{
-        "filenamePattern": "*.pdf"
-      }]
-    }],
+    "customEditors": [
+      {
+        "viewType": "pdf.preview",
+        "displayName": "Pdf Preview",
+        "selector": [
+          {
+            "filenamePattern": "*.pdf"
+          }
+        ]
+      }
+    ],
     "configuration": {
       "type": "object",
       "title": "PDF Preview",
@@ -43,7 +47,8 @@
           "type": "string",
           "default": "select",
           "enum": [
-            "select", "hand"
+            "select",
+            "hand"
           ]
         },
         "pdf-preview.default.scale": {
@@ -62,7 +67,9 @@
           "type": "string",
           "default": "vertical",
           "enum": [
-            "vertical", "horizontal", "wrapped"
+            "vertical",
+            "horizontal",
+            "wrapped"
           ]
         },
         "pdf-preview.default.spreadMode": {
@@ -70,7 +77,9 @@
           "type": "string",
           "default": "none",
           "enum": [
-            "none", "odd", "even"
+            "none",
+            "odd",
+            "even"
           ]
         }
       }
