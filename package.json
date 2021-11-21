@@ -2,7 +2,7 @@
     "name": "papyrus-pdf",
     "displayName": "Papyrus PDF Preview",
     "description": "Display pdf file in VSCode For Papyrus",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "anwar",
     "engines": {
         "vscode": "^1.46.0"
