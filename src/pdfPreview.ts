@@ -140,7 +140,6 @@ export class PdfPreview extends Disposable {
 <script src="${resolveAsUri('lib', 'build', 'pdf.worker.js')}"></script>
 <script src="${resolveAsUri('lib', 'web', 'viewer.js')}"></script>
 <script src="${resolveAsUri('lib', 'main.js')}"></script>
-<script src="${resolveAsUri('lib', 'jquery-3.6.0.min.js')}"></script>
 <script src="${resolveAsUri('lib', 'papyrus-preview.js')}"></script>
 </head>`;
 
