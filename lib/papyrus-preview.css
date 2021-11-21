@@ -1,0 +1,22 @@
+.hover-text-position {
+    background-color: yellow;
+}
+
+.papyrus-tooltip {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+}
+
+#papyrus-mouse-position:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 4px;
+    border-top: 8px solid;
+    border-top-color: #626262;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}

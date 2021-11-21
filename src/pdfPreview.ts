@@ -135,16 +135,25 @@ export class PdfPreview extends Disposable {
     )}">
 <link rel="stylesheet" href="${resolveAsUri('lib', 'web', 'viewer.css')}">
 <link rel="stylesheet" href="${resolveAsUri('lib', 'pdf.css')}">
+<link rel="stylesheet" href="${resolveAsUri('lib', 'papyrus-preview.css')}">
 <script src="${resolveAsUri('lib', 'build', 'pdf.js')}"></script>
 <script src="${resolveAsUri('lib', 'build', 'pdf.worker.js')}"></script>
 <script src="${resolveAsUri('lib', 'web', 'viewer.js')}"></script>
 <script src="${resolveAsUri('lib', 'main.js')}"></script>
+<script src="${resolveAsUri('lib', 'jquery-3.6.0.min.js')}"></script>
+<script src="${resolveAsUri('lib', 'papyrus-preview.js')}"></script>
 </head>`;
+
+    const mouse_position = `
+    <div id="papyrus-mouse-position">
+    </div>
+    `;
 
     const body = `
     <body tabindex="1">
+      ${mouse_position}
       <div id="outerContainer">
-  
+
         <div id="sidebarContainer">
           <div id="toolbarSidebar">
             <div id="toolbarSidebarLeft">
